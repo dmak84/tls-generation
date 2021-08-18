@@ -5,7 +5,7 @@ create a ca folder to hold the ca.key and ca.crt
 run ca.bat
 
 # create server cert
-create a server folder to hold the server key and cert, using the ca certs created in the ca folder
+create a server folder to hold the server key and cert, signing by the ca certs stored in the ca folder
 
 The server folder holding the server key and certs
 
@@ -23,8 +23,8 @@ DNS.4 = broker1-artemis-*-svc-amq.apps.ocp-opentlc.com
 
 ssl.bat server server-csr.conf
 
-# create client cert
-create a client folder to hold the client key and cert, using the ca certs created in the ca folder
+# create client cert signed by the ca cert
+create a client folder to hold the client key and cert, signing by the ca certs stored in the ca folder
 
 The client folder holding the client key and certs
 
